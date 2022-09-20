@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="shortcut icon" href="img/fav100.png">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juliete</title>
+</head>
+
+<body>
+  <header class="menu-principal">
+    <main>
+      <div class="header1">
+        <div class="logo">
+          <img src="img/logo.png" height="68" />
+        </div>
+        <div class="rede-social">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/ongtodobichopira/?ref=page_internal"><img src="img/facebook.png"
+                  height="30px" /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/todobicho/"><img src="img/instagram.png" height="30px" /></a>
+            </li>
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=5511998973034"><img src="img/whatsapp.png" height="30px" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </header>
+  <main class="col-100 menu-urls">
+    <div class="header-2">
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="sobrenos.html">Sobre nós</a></li>
+          <li><a href="localizacao.html">Localização</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="busca">
+        <input placeholder="Buscar" type="text" />
+      </div>
+    </div>
+  </main>
+  <main>
+    <div class="col-100">
+      <div class="foto">
+        <figure class="perfil">
+          <img src="img/foto 8.jpg" alt="" style="width: 100%; border-radius: 1%" />
+        </figure>
+      </div>
+      <div class="texto-foto">
+        <h2>Juliete</h2>
+        Raça : Vira-lata <br>
+        Idade : 8 meses  <br>
+        Temperamento: dócil <br>
+        Principais Vacinas: sim<br>
+        vermifugada: sim <br>
+        Porte: pequeno <br>
+        Castrada: sim<br>
+        <h2>história de Juliete</h2>
+        <p>Prazer pessoAU! Eu sou a Juliete! Nome famoso o meu, né? eu sou uma doguinha de 8 meses castrada, vermifugada e vacinada: e perfeita para você! sou muito animada, essa minha linguinha de fora não engana né? E também muito carinhosa e amorosa! To doida pra fazer parte da sua família! Vem me conhecer! </p>
+      </div>
+      <div class="botao-adotar">
+        <button class="btn_adotar">Adotar</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="col-100 footer">
+      <div class="content-footer">
+        <div class="col-4">
+          <h3><b>Patrocínio</b></h3>
+          <p></p>
+        </div>
+        <div class="col-4">
+          <h3><b>Patrocínio</b></h3>
+          <p></p>
+        </div>
+        <div class="col-4">
+          <h3><b>Patrocínio</b></h3>
+          <p>
+            
+          </p>
+        </div>
+        <div class="col-4">
+          <h3><b>Endereço e Contato</b></h3>
+          <p>
+           Para entar em contato conosco segue nosso telefone, email e endereço fisico 
+          </p>
+          <p class="local">Pirassununga, SP
+          <p>
+          <p class="emailico">todobichopirassununga@gmail.com
+          <p>
+          <p class="telefoneico">11 998973034
+          <p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="col-100 footer-2">
+    <div class="content">
+      <p>
+        Criado por Vitor Villa, Marcus Oliveira, Tiago Silveira e Luiz Couto
+      </p>
+    </div>
+  </div>
+
+  <div class="modal-container" id="modal-adotar">
+    <div class="modal">
+      <button class="fechar">x</button>
+      <h3 class="h3-modal">Adotar</h3>
+      <p class="p-modal">
+        Ao preencher esse formulário você está permitindo que um dos nosso representantes entre em contato para que assuma a responsabilidade da adoção desse pet.
+      <div class="contato-modal">
+        <form method="POST" action="https://api.staticforms.xyz/submit" class="form-modal">
+          <input type="hidden" name="accessKey" value="8c696984-bf31-4997-87ba-c8902a8578d8">
+
+          <label for="inputNome">Nome:</label>
+          <input class="area-nome" type="text" id="inputNome" name="nome" required maxlength="25" minlength="2">
+          <span></span>
+
+          <label for="inputEmail">Endereço de Email:</label>
+          <input class="area-email" type="email" id="inputEmail" name="email" required maxlength="50">
+          <span></span>
+
+          <label for="inputEmail">Telefone:</label>
+          <input type="text" name="phone">
+          <span></span>
+
+          <label for="inputEmail">Endereço:</label>
+          <input type="text" name="$address">
+
+          <label for="textAreaMensagem">Mensagem:</label>
+          <textarea name="message" id="textAreaMensagem" required maxlength="400"></textarea>
+          <input type="hidden" name="redirectTo" value="http://adopetpira.atwebpages.com">
+          <span></span>
+    
+          <button>Enviar mensagem</button>
+        </form>
+      </div>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function iniciaModal(modalID) {
+      const modal = document.getElementById(modalID);
+      if (modal) {
+        modal.classList.add("mostar");
+        modal.addEventListener("click", (e) => {
+          if (e.target.id == modalID || e.target.className == "fechar") {
+            modal.classList.remove("mostar");
+          }
+        });
+      }
+    }
+    const botao = document.querySelector(".btn_adotar");
+    botao.addEventListener("click", () => iniciaModal("modal-adotar"));
+  </script>
+
+</body>
+
+</html>

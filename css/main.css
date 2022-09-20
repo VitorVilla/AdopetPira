@@ -1,0 +1,547 @@
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+:root {
+  --corBackgroundPrimaria: #2ca577;
+  --corBackgroundSecundaria: #1e4146;
+  --corTextPrimaria: #646464;
+  --corTextoSecudaria: #a7a7a7;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+ul {
+  padding: 0px !important;
+}
+.menu-principal {
+  width: 100%;
+  background-color: var(--corBackgroundPrimaria);
+  height: 60px;
+}
+main,
+.content {
+  margin: 0 auto;
+  width: 980px;
+  position: relative;
+}
+.logo {
+  float: left;
+  width: 70%;
+}
+.rede-social ul li {
+  float: left;
+  margin-left: 21px;
+  display: inline-block;
+  list-style: none;
+}
+.rede-social ul li a:hover img {
+  transform: scale(1.2) translateY(-4px);
+}
+.rede-social {
+  width: 20%;
+  float: right;
+}
+.header-2 {
+  background-color: #fff;
+  width: 980px;
+  margin: 0 auto;
+  padding: 11px;
+}
+.menu-urls {
+  border-bottom: 3px solid #efefef;
+  height: 80px;
+}
+.menu ul li {
+  display: inline-block;
+  color: var(--corTextoSecudaria);
+  margin-left: 15px;
+  height: 53px;
+}
+.menu ul li:hover {
+  border-bottom: 3px solid var(--corBackgroundPrimaria);
+}
+.menu ul li a:hover {
+  color: var(--corBackgroundPrimaria);
+}
+.menu ul li a {
+  font-family: "sans-serif", "Quicksand";
+  color: var(--corTextoSecudaria);
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.menu {
+  width: 60%;
+  float: left;
+}
+.busca {
+  text-align: center;
+  width: 30%;
+  float: right;
+}
+.busca input {
+  background-image: url("../img/busca.png");
+  background-repeat: no-repeat;
+  background-position: 96%;
+  height: 36px;
+  width: 190px;
+  margin-top: 10px;
+  padding: 0 0 0 12px;
+  border: 1px solid #d6d6d6;
+}
+.col-100 {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+button.slick-prev {
+  font-size: 0px;
+  border: none;
+  height: 51px;
+  width: 25px;
+  background-color: transparent;
+  background-image: url("../img/seta-esquerda.png");
+  position: absolute;
+  z-index: 9;
+  top: 40%;
+  left: 10%;
+}
+button.slick-next {
+  font-size: 0px;
+  border: none;
+  height: 51px;
+  width: 25px;
+  background-color: transparent;
+  background-image: url("../img/seta-direita.png");
+  position: absolute;
+  z-index: 9;
+  top: 40%;
+  right: 10%;
+}
+.tam-carrocel {
+  width: 980px;
+  padding-left: 12%;
+  float: left;
+  position: relative;
+  padding-top: 80px;
+}
+.slick-dots li button {
+  font-size: 0px;
+  border: 5px solid #fff;
+  height: 23px;
+  width: 23px;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slick-dots li {
+  padding-left: 5px;
+  display: inline-block;
+}
+.slick-dots {
+  margin: 0 auto;
+  width: 50%;
+  position: absolute;
+  left: 45%;
+  top: 92%;
+}
+li.slick-active button {
+  background-color: #fff;
+}
+.texto-destaque p {
+  font-family: "sans-serif", "Quicksand";
+  color: var(--corTextoSecudaria);
+  font-size: 20px;
+}
+.texto-mural{
+  font-family: "sans-serif", "Quicksand";
+  color: var(--corTextPrimaria);
+  font-size: 30px;
+  text-transform: uppercase;
+  position: absolute;
+  top: -21.5em;
+  padding-left: 35%;
+}
+.texto-destaque {
+  text-align: center;
+}
+.col-3 {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 29%;
+  float: left;
+  position: relative;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: #fff;
+  background-color: var(--corBackgroundPrimaria);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.card a {
+  text-decoration: none;
+  color: #fff;
+}
+.card a:visited {
+  color: #fff;
+}
+.pagination {
+  padding: 0 43%;
+  font-family: "sans-serif", "Quicksand";
+
+}
+.pagination a {
+  color: var(--corBackgroundPrimaria);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a.active {
+  background-color: var(--corBackgroundPrimaria);
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.card h1{
+  font-family: "sans-serif", "Quicksand";
+  color: var(--corTextPrimaria);
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.emailico{
+  width: auto;
+}
+
+.col-4 {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.col-4 img {
+  cursor: pointer;
+  margin: 0 auto;
+  padding-top: 1em;
+  vertical-align: middle;
+}
+.col-4 img:hover {
+  margin-top: 10px !important;
+  position: relative !important;
+}
+
+.bloco-logos {
+  height: 170px;
+}
+
+.bloco-logos img {
+  margin-top: 50px;
+}
+
+.footer h3 {
+  font-family: "sans-serif", "Quicksand";
+  text-align: left;
+}
+
+.footer {
+  background-image: url("../img/footer.png");
+  color: #ffffff;
+}
+
+.footer-2 {
+  background-image: url("../img/footer2.png");
+  color: var(--corTextoSecudaria);
+  height: 70px;
+}
+
+.footer p {
+  font-family: "sans-serif", "Quicksand";
+  width: 93%;
+  text-align: left;
+}
+
+.footer-2 p {
+  text-align: center;
+  font-family: "sans-serif", "Quicksand";
+  padding: 10px;
+}
+
+.local:before,
+.emailico:before,
+.telefoneico:before {
+  content: "";
+  width: 17px;
+  height: 24px;
+  display: inline-block;
+  float: left;
+  background-repeat: no-repeat;
+  padding-left: 5px;
+}
+.local:before {
+  background-image: url("../img/local.png");
+}
+.emailico:before {
+  background-image: url("../img/email.png");
+}
+.telefoneico:before {
+  background-image: url("../img/telefone.png");
+}
+
+.content-footer{
+  margin: 0 auto;
+  width: 1250px;
+  position: relative;
+}
+
+
+/**SOBRE NÓS**/
+.texto-sobre h1 {
+  font-family: "sans-serif", "Quicksand";
+  text-transform: uppercase;
+  background-color: var(--corBackgroundPrimaria);
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.texto-sobre p {
+  font-family: "sans-serif", "Quicksand";
+  font-size: 18px;
+}
+
+/**CONTATO**/
+.contato {
+  font-family: "sans-serif", "Quicksand";
+  width: 100%;
+  max-width: 500px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input,
+textarea {
+  font-family: "sans-serif", "Quicksand";
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.form textarea {
+  font-family: "sans-serif", "Quicksand";
+  height: 150px;
+}
+section.content {
+  display: flex;
+  justify-content: center;
+}
+.form button {
+  background-color: var(--corBackgroundPrimaria);
+  color: #fff;
+  font-family: "sans-serif", "Quicksand";
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form label {
+  font-family: "sans-serif", "Quicksand";
+  color: rgb(109, 103, 103);
+}
+
+/*ADOTAR*/
+
+.perfil {
+  width: 480px;
+}
+
+figure.perfil {
+  border-radius: 5%;
+  float: left;
+  display: flex;
+}
+
+.perfil img{
+  border: 6px solid #2ca577;
+}
+
+.foto {
+  margin: 0px 0px 0px -29px;
+  width: 550px;
+}
+
+.texto-foto {
+  font-family: "sans-serif", "Quicksand";
+  margin: -13px 0px 0px 0px;
+  text-align: justify;
+  width: 441px;
+  float: right;
+}
+
+.botao-adotar {
+  font-family: "sans-serif", "Quicksand";
+  width: 480px;
+  margin: 0px 0px 20px 13px;
+  text-align: center;
+  display: flex;
+  justify-content:center;
+}
+
+.btn_adotar{
+  background-color: var(--corBackgroundPrimaria);
+  color: #fff;
+  font-family: "sans-serif", "Quicksand";
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 420px;
+  font-size: 15px;
+}
+
+.texto-foto h2{
+  font-size: 25px;
+  color: #2ca577;
+}
+
+.texto-foto p {
+  font-family: "sans-serif", "Quicksand";
+}
+
+/*MODAL*/
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  text-align:center;
+  background: white;
+  width: 50%;
+  min-width: 400px;
+  padding: 27px;
+  border: 10px solid #2ca577;
+  box-shadow: 0 0 0 10px white;
+  position: relative; 
+}
+
+.fechar {
+  position: absolute;
+  font-size: 2em;
+  top: -30px;
+  right: -30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid white;
+  background: #2ca577;
+  color: white;
+  font-family: monospace;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0,.3);
+}
+
+.modal-container.mostar{
+  display: flex;
+}
+
+.mostar .modal{
+  animation: modal .3s;
+}
+
+.h3-modal{
+  font-family: "sans-serif", "Quicksand";
+}
+
+.p-modal{
+  font-family: "sans-serif", "Quicksand";
+}
+
+.contato-modal{
+  font-family: "sans-serif", "Quicksand";
+}
+
+.contato-modal form{
+  display: flex;
+  flex-direction:column;
+
+} 
+
+.form-modal input, textarea{
+  font-family: "sans-serif", "Quicksand";
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-modal textarea{
+  font-family: "sans-serif", "Quicksand";
+}
+
+.form-modal button{
+  background-color: var(--corBackgroundPrimaria);
+  color: #fff;
+  font-family: "sans-serif", "Quicksand";
+  padding: 10px;
+  margin-bottom: -35px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-modal label{
+  font-family: "sans-serif", "Quicksand";
+  color: rgb(109, 103, 103);
+}
+
+@keyframes modal{
+  from{
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/**PAG2**/
+.texto-pg2{
+  font-family: "sans-serif", "Quicksand";
+  color: var(--corTextPrimaria);
+  font-size: 30px;
+  text-transform: uppercase;
+}
